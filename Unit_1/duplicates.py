@@ -24,7 +24,7 @@ class HashMapSolution:
 
 class SortedSolution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        # Sort the list ad check for adjacent duplicates
+        # Sort the list and check for adjacent duplicates
         nums.sort()
         for i in range(1, len(nums)):
             if nums[i] == nums[i - 1]:

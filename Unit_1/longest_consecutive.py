@@ -57,6 +57,7 @@ class RecursiveSolution:
 class DPSolution:
     def longestConsecutive(self, nums: List[int]) -> int:
         # use dp table
+        
         return
 
 class BSTSolution:

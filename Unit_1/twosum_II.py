@@ -35,4 +35,10 @@ class BinarySearchSolution:
                 return i + 1 , x + 1
 class DictionarySolution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
-         
+        dict = {}
+        for i, num in enumerate(numbers):
+            complement = target - num
+            if complement in dict:
+                return i + 1, dict[complement] + 1
+            else:
+                dict[num] = i
