@@ -75,11 +75,4 @@ class PeriodicCleanup_RecentCounter:
         # periodic cleanup
         if self.call_count % self.compressinterval == 0:
             self.requests = [x for x in self.requests if x >=t - 3000]
-
-
-        self.buffer[self.end & self.size] = t
-        # fixed size buffer
-        self.end+=1 
-        while self.buffer[self.start] < t - 3000:
-            self.start +=1
-        return self.end - self.start
+        return sum(1 for x in self.requests if x >= t - 3000 and x <= t)

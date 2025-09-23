@@ -52,7 +52,7 @@ class Recursive_Solution:
         # dict
         # BASE CASE: if s is empty, return 0
         if roman_dict[s[0]]   >= roman_dict[s[1]]:
-            return  roman_dict[s[0]] + self.romanToInt(s[1:])
+            return roman_dict[s[0]] + self.romanToInt(s[1:])
         else:
             return - roman_dict[s[0]] + self.romanToInt(s[1:])
 

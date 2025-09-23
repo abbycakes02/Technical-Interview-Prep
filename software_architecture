@@ -1,0 +1,47 @@
+1. layered pattern
+- presentation layer ( ui component)
+- application layer(service layer)
+- business logic layer( domain layer)
+- data access layer ( persistencee layer)
+
+
+2. client-server pattern
+- server and multiple clients
+- tcp/ip control to manage communication
+
+3. master-slave pattern
+- master distributes work and slaves return
+- best for database replication 
+
+4. event-bus pattern ( building notificaiton services)
+- listeners are notified of messages from channel when they want notifications
+- event: event source, event listener, channel, and event __builtins__
+
+5. pipe-fitler pattern
+- data processed use pipes for bufferin or synchronizaiton pruposes
+- used for building compilers 
+
+6. broker pattern
+- distributed systems 
+- client requests service frorm broker and the broker redirects it to the most suitable service
+- apache kafka 
+
+7. peer to peer pattern
+- client requests ervices
+- service sprovides service
+- file sharing, multi-media protocols
+- model view control pattern
+
+8. model - view pattern 
+- core functionality and data 
+- view displays information 
+
+
+9. interpreter pattern
+- used in sql
+- class for each symbol in the language
+
+10. blackboard pattern
+- knowledge source: specialized modules 
+
+
